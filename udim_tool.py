@@ -19,12 +19,12 @@ import maya.cmds as cmds
 import importlib
 
 import sys
-sys.path.append('C:/Users/agust/OneDrive/01_TINTO/DOCUMENTS/GitHub/rename_tool')
+sys.path.append('C:/Users/agust/OneDrive/01_TINTO/DOCUMENTS/GitHub/UDIM_tool')
 
-import rename_tool
-importlib.reload(rename_tool)
+import udim_tool
+importlib.reload(udim_tool)
 
-rename_tool
+udim_tool
 
 '''
 
@@ -44,8 +44,7 @@ import maya.cmds as cmds
 #------------------------------------------------------------------------------------------------
 '''
 
-# Setting the window variable and naming
-udimTool_window = cmds.window('Rename tool')
+
 
 # checking if the window UI exists
 
