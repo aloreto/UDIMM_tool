@@ -104,45 +104,47 @@ def rotateUV_90(*args):
 
 # indiviual udimm transpositions
 
-# row 1
-def udim_1002(*args):
-    move_to_default_Udim_tile()
-    cmds.polyEditUV(u = 1, v = 0) 
 
-def udim_1003(*args):
+# row 3
+def udim_1021(*args):
     move_to_default_Udim_tile()
-    cmds.polyEditUV(u = 2, v = 0)     
+    cmds.polyEditUV(u = 0, v = 2) 
 
-def udim_1004(*args):
+def udim_1022(*args):
     move_to_default_Udim_tile()
-    cmds.polyEditUV(u = 3, v = 0) 
+    cmds.polyEditUV(u = 1, v = 2)     
+
+def udim_1023(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 2, v = 2) 
      
-def udim_1005(*args):
+def udim_1024(*args):
     move_to_default_Udim_tile()
-    cmds.polyEditUV(u = 4, v = 0) 
+    cmds.polyEditUV(u = 3, v = 2) 
     
-def udim_1006(*args):
+def udim_1025(*args):
     move_to_default_Udim_tile()
-    cmds.polyEditUV(u = 5, v = 0) 
+    cmds.polyEditUV(u = 4, v = 2) 
 
-def udim_1007(*args):
+def udim_1026(*args):
     move_to_default_Udim_tile()
-    cmds.polyEditUV(u = 6, v = 0) 
+    cmds.polyEditUV(u = 5, v = 2) 
 
-def udim_1008(*args):
+def udim_1027(*args):
     move_to_default_Udim_tile()
-    cmds.polyEditUV(u = 7, v = 0) 
+    cmds.polyEditUV(u = 6, v = 2) 
 
-def udim_1009(*args):
+def udim_1028(*args):
     move_to_default_Udim_tile()
-    cmds.polyEditUV(u = 8, v = 0) 
+    cmds.polyEditUV(u = 7, v = 2) 
 
-def udim_1010(*args):
+def udim_1029(*args):
     move_to_default_Udim_tile()
-    cmds.polyEditUV(u = 9, v = 0) 
+    cmds.polyEditUV(u = 8, v = 2)   
 
-
-
+def udim_1030(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 9, v = 2)      
 
 # row 2
 def udim_1011(*args):
@@ -184,6 +186,48 @@ def udim_1019(*args):
 def udim_1020(*args):
     move_to_default_Udim_tile()
     cmds.polyEditUV(u = 9, v = 1)      
+
+
+# row 1
+def udim_1002(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 1, v = 0) 
+
+def udim_1003(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 2, v = 0)     
+
+def udim_1004(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 3, v = 0) 
+     
+def udim_1005(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 4, v = 0) 
+    
+def udim_1006(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 5, v = 0) 
+
+def udim_1007(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 6, v = 0) 
+
+def udim_1008(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 7, v = 0) 
+
+def udim_1009(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 8, v = 0) 
+
+def udim_1010(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 9, v = 0) 
+
+
+
+
 
 udimTool_window = 'udim tool'
 
@@ -337,16 +381,16 @@ cmds.button(label='1039')
 cmds.button(label='1040')
 
 
-cmds.button(label='1021')
-cmds.button(label='1022')
-cmds.button(label='1023')
-cmds.button(label='1024')
-cmds.button(label='1025')
-cmds.button(label='1026')
-cmds.button(label='1027')
-cmds.button(label='1028')
-cmds.button(label='1029')
-cmds.button(label='1030')
+cmds.button(label='1021', command= udim_1021)
+cmds.button(label='1022', command= udim_1022)
+cmds.button(label='1023', command= udim_1023)
+cmds.button(label='1024', command= udim_1024)
+cmds.button(label='1025', command= udim_1025)
+cmds.button(label='1026', command= udim_1026)
+cmds.button(label='1027', command= udim_1027)
+cmds.button(label='1028', command= udim_1028)
+cmds.button(label='1029', command= udim_1029)
+cmds.button(label='1030', command= udim_1030)
 
 
 cmds.button(label='1011', command= udim_1011)
