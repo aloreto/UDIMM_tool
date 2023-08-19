@@ -75,21 +75,16 @@ def move_to_default_Udim_tile(*args):
 
 
 # uv udim single tyle transposition
-def moveUDIM_1_left(*args): 
-    currentPosition=get_udim_currentPosition()
-    print(currentPosition)   
-    
-    #cmds.polyEditUV( uValue=1, vValue=0 )  
+def moveUDIM_1_left(*args):    
+    cmds.polyEditUV( uValue=1, vValue=0 )  
 
 def moveUDIM_1_right(*args):    
     cmds.polyEditUV(u = 1, v = 0)   
 
-def moveUDIM_1_up(*args):
-    print('MOVE')   
+def moveUDIM_1_up(*args):     
     cmds.polyEditUV(u = 0, v = 1)  
 
-def moveUDIM_1_down(*args):
-    print('MOVE')   
+def moveUDIM_1_down(*args):     
     cmds.polyEditUV(u = 0, v = -1)    
 
 
@@ -105,7 +100,54 @@ def rotateUV_45(*args):
 def rotateUV_90(*args):
     cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 )
 
+
+
+# indiviual udimm transpositions
+
+# row 1
+def udim_1002(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 1, v = 0) 
+
+def udim_1003(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 2, v = 0)     
+
+def udim_1004(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 3, v = 0) 
+     
+def udim_1005(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 4, v = 0) 
     
+def udim_1006(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 5, v = 0) 
+
+def udim_1007(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 6, v = 0) 
+
+def udim_1008(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 7, v = 0) 
+
+def udim_1009(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 8, v = 0) 
+
+def udim_1010(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 9, v = 0) 
+
+
+
+
+def udim_1002(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 1, v = 0)     
+
 udimTool_window = 'udim tool'
 
 # checking if the window UI exists
@@ -283,15 +325,15 @@ cmds.button(label='1020')
 
 
 cmds.button(label='1001', command=move_to_default_Udim_tile)
-cmds.button(label='1002')
-cmds.button(label='1003')
-cmds.button(label='1004')
-cmds.button(label='1005')
-cmds.button(label='1006')
-cmds.button(label='1007')
-cmds.button(label='1008')
-cmds.button(label='1009')
-cmds.button(label='1010')
+cmds.button(label='1002', command=udim_1002)
+cmds.button(label='1003', command=udim_1003)
+cmds.button(label='1004', command=udim_1004)
+cmds.button(label='1005', command=udim_1005)
+cmds.button(label='1006', command=udim_1006)
+cmds.button(label='1007', command=udim_1007)
+cmds.button(label='1008', command=udim_1008)
+cmds.button(label='1009', command=udim_1009)
+cmds.button(label='1010', command=udim_1010)
 
 cmds.setParent('..')
 cmds.setParent('..')
