@@ -67,25 +67,60 @@ if cmds.window(udimTool_window, exists=True):
 # Setting the window variable and naming
 udimTool_window = cmds.window('udim tool')
 
+
+# Left side of tool and title
+cmds.rowColumnLayout( numberOfColumns=2)
+
 cmds.columnLayout()
-cmds.rowColumnLayout( numberOfColumns=2, columnAttach=(1, 'right', 0), columnWidth=[(1, 100), (2, 250)] )
-cmds.text( label='Name' )
-name_field = cmds.textField(text='name' )
-cmds.text( label='sufix_geo')
-sufix_geo_field = cmds.textField(text='geo' )
-cmds.text( label='sufix_group' )
-sufix_group_field = cmds.textField(text='grp' )
-cmds.text( label='side' )
-side_field = cmds.textField(text='C' )
-cmds.separator(h=30, width = 350)
+
+cmds.separator(height=10)
+cmds.text(label='              UV MODIFIERS')
+cmds.separator(height=20)
+
+# pane for buttons battery
+cmds.rowColumnLayout( numberOfColumns=2 )
+
+# rotation buttons
+cmds.button( label='rotate 22.5', width = 100)
+cmds.button( label='rotate 45', width = 100)
+cmds.button( label='rotate 75', width = 100)
+cmds.button( label='rotate 90', width = 100)
+
+cmds.separator(height=20)
+cmds.separator(height=20)
+
+# single tyle transposition buttons
+cmds.button( label='1 udim left', width = 100)
+cmds.button( label='1 udim right', width = 100)
+cmds.button( label='1 udim up', width = 100)
+cmds.button( label='1 udim down', width = 100)
+
+cmds.separator(height=20)
+cmds.separator(height=20)
+
+# scale  up buttons
+cmds.button( label='+10% scale', width = 100)
+cmds.button( label='+25% scale', width = 100)
+cmds.button( label='+50% scale', width = 100)
+cmds.button( label='+75% scale', width = 100)
+
+cmds.separator(height=20)
+cmds.separator(height=20)
+
+# scale down buttons
+cmds.button( label='-10% scale', width = 100)
+cmds.button( label='-25% scale', width = 100)
+cmds.button( label='-50% scale', width = 100)
+cmds.button( label='-75% scale', width = 100)
+
+
+cmds.setParent('..')
 cmds.setParent('..')
 
-cmds.rowLayout()
-cmds.button( label='Rename', width = 350)
+cmds.columnLayout()
 
-
-cmds.setParent('..')
-
+cmds.separator(height=10)
+cmds.text(label='UDIM TYLE GRID SPACE')
 
 cmds.gridLayout( numberOfColumns=10, numberOfRows=10, cellWidthHeight=(50, 50) )
 
@@ -208,6 +243,8 @@ cmds.button(label='1008')
 cmds.button(label='1009')
 cmds.button(label='1010')
 
+cmds.setParent('..')
+cmds.setParent('..')
 
 
 cmds.showWindow( udimTool_window )
