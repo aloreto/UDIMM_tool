@@ -31,7 +31,6 @@ import math
 import maya.cmds as cmds
 
 
-
 #_________________________________________________________________________________________
 '''
 
@@ -43,6 +42,47 @@ import maya.cmds as cmds
 # on the previous layout
 #------------------------------------------------------------------------------------------------
 '''
+
+
+# uv rotation functions
+
+# positive rotations
+def rotateUV_15(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-22.5 )
+
+def rotateUV_25(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-45 )
+
+def rotateUV_45(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 )
+
+def rotateUV_75(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-22.5 )
+
+def rotateUV_90(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-22.5 )    
+
+
+
+# negative rotations
+def rotateUV_n15(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-45 )
+
+def rotateUV_n25(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 )  
+
+def rotateUV_n50(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-45 )
+
+def rotateUV_n75(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 ) 
+
+def rotateUV_n90(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 )              
+
+
+
+
 # query in which udim tile a uv is
 def get_udim_currentPosition(*args):
 
@@ -72,34 +112,6 @@ def move_to_default_Udim_tile(*args):
     print(currentPosition) 
    
     cmds.polyEditUV(u = currentPosition[0]*-1, v = currentPosition[1]*-1)  
-
-
-# uv udim single tyle transposition
-def moveUDIM_1_left(*args):    
-    cmds.polyEditUV( uValue=1, vValue=0 )  
-
-def moveUDIM_1_right(*args):    
-    cmds.polyEditUV(u = 1, v = 0)   
-
-def moveUDIM_1_up(*args):     
-    cmds.polyEditUV(u = 0, v = 1)  
-
-def moveUDIM_1_down(*args):     
-    cmds.polyEditUV(u = 0, v = -1)    
-
-
-# uv rotation functions
-def rotateUV_22(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-22.5 )
-
-
-def rotateUV_45(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-45 )
-
-
-def rotateUV_90(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 )
-
 
 
 # indiviual udimm transpositions
@@ -535,7 +547,7 @@ cmds.rowColumnLayout( numberOfColumns=2)
 cmds.columnLayout()
 
 cmds.separator(height=10)
-cmds.text(label='  TRANSFORMS')
+cmds.text(label='  UV TRANSFORMS')
 cmds.separator(height=10)
 
 # pane for buttons battery
@@ -550,6 +562,9 @@ cmds.button( label='rotate 25', width = 100)
 cmds.button( label='rotate 45', width = 100)
 cmds.button( label='rotate 75', width = 100)
 cmds.button( label='rotate 90', width = 100)
+
+cmds.separator(height=20)
+
 
 # rotation buttons negative
 cmds.button( label='rotate -15', width = 100)
@@ -583,7 +598,8 @@ cmds.setParent('..')
 cmds.columnLayout()
 
 cmds.separator(height=10)
-cmds.text(label='UDIM TYLE GRID SPACE')
+cmds.text(label='   UDIM TILE GRID SPACE')
+cmds.separator(height=10)
 
 cmds.gridLayout( numberOfColumns=10, numberOfRows=10, cellWidthHeight=(50, 50) )
 
