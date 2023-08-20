@@ -104,6 +104,88 @@ def rotateUV_90(*args):
 
 # indiviual udimm transpositions
 
+# row 5
+def udim_1041(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 0, v = 4) 
+
+def udim_1042(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 1, v = 4)     
+
+def udim_1043(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 2, v = 4) 
+     
+def udim_1044(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 3, v = 4) 
+    
+def udim_1045(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 4, v = 4) 
+
+def udim_1046(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 5, v = 4) 
+
+def udim_1047(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 6, v = 4) 
+
+def udim_1048(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 7, v = 4) 
+
+def udim_1049(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 8, v = 4)   
+
+def udim_1050(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 9, v = 4)      
+
+# row 4
+def udim_1031(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 0, v = 3) 
+
+def udim_1032(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 1, v = 3)     
+
+def udim_1033(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 2, v = 3) 
+     
+def udim_1034(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 3, v = 3) 
+    
+def udim_1035(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 4, v = 3) 
+
+def udim_1036(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 5, v = 3) 
+
+def udim_1037(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 6, v = 3) 
+
+def udim_1038(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 7, v = 3) 
+
+def udim_1039(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 8, v = 3)   
+
+def udim_1040(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 9, v = 3)      
+
 
 # row 3
 def udim_1021(*args):
@@ -357,28 +439,28 @@ cmds.button(label='1059')
 cmds.button(label='1060')
 
 
-cmds.button(label='1041')
-cmds.button(label='1042')
-cmds.button(label='1043')
-cmds.button(label='1044')
-cmds.button(label='1045')
-cmds.button(label='1046')
-cmds.button(label='1047')
-cmds.button(label='1048')
-cmds.button(label='1049')
-cmds.button(label='1050')
+cmds.button(label='1041', command= udim_1041)
+cmds.button(label='1042', command= udim_1042)
+cmds.button(label='1043', command= udim_1043)
+cmds.button(label='1044', command= udim_1044)
+cmds.button(label='1045', command= udim_1045)
+cmds.button(label='1046', command= udim_1046)
+cmds.button(label='1047', command= udim_1047)
+cmds.button(label='1048', command= udim_1048)
+cmds.button(label='1049', command= udim_1049)
+cmds.button(label='1050', command= udim_1050)
 
 
-cmds.button(label='1031')
-cmds.button(label='1032')
-cmds.button(label='1033')
-cmds.button(label='1034')
-cmds.button(label='1035')
-cmds.button(label='1036')
-cmds.button(label='1037')
-cmds.button(label='1038')
-cmds.button(label='1039')
-cmds.button(label='1040')
+cmds.button(label='1031', command= udim_1031)
+cmds.button(label='1032', command= udim_1032)
+cmds.button(label='1033', command= udim_1033)
+cmds.button(label='1034', command= udim_1034)
+cmds.button(label='1035', command= udim_1035)
+cmds.button(label='1036', command= udim_1036)
+cmds.button(label='1037', command= udim_1037)
+cmds.button(label='1038', command= udim_1038)
+cmds.button(label='1039', command= udim_1039)
+cmds.button(label='1040', command= udim_1040)
 
 
 cmds.button(label='1021', command= udim_1021)
