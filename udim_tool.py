@@ -104,6 +104,171 @@ def rotateUV_90(*args):
 
 # indiviual udimm transpositions
 
+# row 10
+def udim_1091(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 0, v = 9) 
+
+def udim_1092(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 1, v = 9)     
+
+def udim_1093(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 2, v = 9) 
+     
+def udim_1094(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 3, v = 9) 
+    
+def udim_1095(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 4, v = 9) 
+
+def udim_1096(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 5, v = 9) 
+
+def udim_1097(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 6, v = 9) 
+
+def udim_1098(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 7, v = 9) 
+
+def udim_1099(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 8, v = 9)   
+
+def udim_1100(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 9, v = 9)      
+
+
+# row 9
+def udim_1081(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 0, v = 8) 
+
+def udim_1082(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 1, v = 8)     
+
+def udim_1083(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 2, v = 8) 
+     
+def udim_1084(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 3, v = 8) 
+    
+def udim_1085(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 4, v = 8) 
+
+def udim_1086(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 5, v = 8) 
+
+def udim_1087(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 6, v = 8) 
+
+def udim_1088(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 7, v = 8) 
+
+def udim_1089(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 8, v = 8)   
+
+def udim_1090(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 9, v = 8)      
+
+# row 8
+def udim_1071(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 0, v = 7) 
+
+def udim_1072(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 1, v = 7)     
+
+def udim_1073(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 2, v = 7) 
+     
+def udim_1074(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 3, v = 7) 
+    
+def udim_1075(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 4, v = 7) 
+
+def udim_1076(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 5, v = 7) 
+
+def udim_1077(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 6, v = 7) 
+
+def udim_1078(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 7, v = 7) 
+
+def udim_1079(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 8, v = 7)   
+
+def udim_1080(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 9, v = 7)      
+
+# row 7
+def udim_1061(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 0, v = 6) 
+
+def udim_1062(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 1, v = 6)     
+
+def udim_1063(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 2, v = 6) 
+     
+def udim_1064(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 3, v = 6) 
+    
+def udim_1065(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 4, v = 6) 
+
+def udim_1066(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 5, v = 6) 
+
+def udim_1067(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 6, v = 6) 
+
+def udim_1068(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 7, v = 6) 
+
+def udim_1069(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 8, v = 6)   
+
+def udim_1070(*args):
+    move_to_default_Udim_tile()
+    cmds.polyEditUV(u = 9, v = 6)      
+
 # row 6
 def udim_1051(*args):
     move_to_default_Udim_tile()
@@ -422,51 +587,51 @@ cmds.text(label='UDIM TYLE GRID SPACE')
 cmds.gridLayout( numberOfColumns=10, numberOfRows=10, cellWidthHeight=(50, 50) )
 
 
-cmds.button(label='1091')
-cmds.button(label='1092')
-cmds.button(label='1093')
-cmds.button(label='1094')
-cmds.button(label='1095')
-cmds.button(label='1096')
-cmds.button(label='1097')
-cmds.button(label='1098')
-cmds.button(label='1099')
-cmds.button(label='1100')
+cmds.button(label='1091', command= udim_1091)
+cmds.button(label='1092', command= udim_1092)
+cmds.button(label='1093', command= udim_1093)
+cmds.button(label='1094', command= udim_1094)
+cmds.button(label='1095', command= udim_1095)
+cmds.button(label='1096', command= udim_1096)
+cmds.button(label='1097', command= udim_1097)
+cmds.button(label='1098', command= udim_1098)
+cmds.button(label='1099', command= udim_1099)
+cmds.button(label='1100', command= udim_1100)
 
 
-cmds.button(label='1081')
-cmds.button(label='1082')
-cmds.button(label='1083')
-cmds.button(label='1084')
-cmds.button(label='1085')
-cmds.button(label='1086')
-cmds.button(label='1087')
-cmds.button(label='1088')
-cmds.button(label='1089')
-cmds.button(label='1090')
+cmds.button(label='1081', command= udim_1081)
+cmds.button(label='1082', command= udim_1082)
+cmds.button(label='1083', command= udim_1083)
+cmds.button(label='1084', command= udim_1084)
+cmds.button(label='1085', command= udim_1085)
+cmds.button(label='1086', command= udim_1086)
+cmds.button(label='1087', command= udim_1087)
+cmds.button(label='1088', command= udim_1088)
+cmds.button(label='1089', command= udim_1089)
+cmds.button(label='1090', command= udim_1090)
 
 
-cmds.button(label='1071')
-cmds.button(label='1072')
-cmds.button(label='1073')
-cmds.button(label='1074')
-cmds.button(label='1075')
-cmds.button(label='1076')
-cmds.button(label='1077')
-cmds.button(label='1078')
-cmds.button(label='1079')
-cmds.button(label='1080')
+cmds.button(label='1071', command= udim_1071)
+cmds.button(label='1072', command= udim_1072)
+cmds.button(label='1073', command= udim_1073)
+cmds.button(label='1074', command= udim_1074)
+cmds.button(label='1075', command= udim_1075)
+cmds.button(label='1076', command= udim_1076)
+cmds.button(label='1077', command= udim_1077)
+cmds.button(label='1078', command= udim_1078)
+cmds.button(label='1079', command= udim_1079)
+cmds.button(label='1080', command= udim_1080)
 
-cmds.button(label='1061')
-cmds.button(label='1062')
-cmds.button(label='1063')
-cmds.button(label='1064')
-cmds.button(label='1065')
-cmds.button(label='1066')
-cmds.button(label='1067')
-cmds.button(label='1068')
-cmds.button(label='1069')
-cmds.button(label='1070')
+cmds.button(label='1061', command= udim_1061)
+cmds.button(label='1062', command= udim_1062)
+cmds.button(label='1063', command= udim_1063)
+cmds.button(label='1064', command= udim_1064)
+cmds.button(label='1065', command= udim_1065)
+cmds.button(label='1066', command= udim_1066)
+cmds.button(label='1067', command= udim_1067)
+cmds.button(label='1068', command= udim_1068)
+cmds.button(label='1069', command= udim_1069)
+cmds.button(label='1070', command= udim_1070)
 
 
 cmds.button(label='1051', command= udim_1051)
