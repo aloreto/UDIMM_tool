@@ -535,30 +535,31 @@ cmds.rowColumnLayout( numberOfColumns=2)
 cmds.columnLayout()
 
 cmds.separator(height=10)
-cmds.text(label='              UV MODIFIERS')
-cmds.separator(height=20)
+cmds.text(label='  TRANSFORMS')
+cmds.separator(height=10)
 
 # pane for buttons battery
-cmds.rowColumnLayout( numberOfColumns=2 )
+cmds.columnLayout()
 
-# single tyle transposition buttons
-cmds.button( label='1 udim left', width = 100, command=moveUDIM_1_left)
-cmds.button( label='1 udim right', width = 100, command=moveUDIM_1_right)
-cmds.button( label='1 udim up', width = 100, command=moveUDIM_1_up)
-cmds.button( label='1 udim down', width = 100, command=moveUDIM_1_down)
+cmds.separator(height=10)
 
 
-cmds.separator(height=20)
-cmds.separator(height=20)
-
-# rotation buttons
-cmds.button( label='rotate 22.5', width = 100)
+# rotation buttons positive
+cmds.button( label='rotate 15', width = 100)
+cmds.button( label='rotate 25', width = 100)
 cmds.button( label='rotate 45', width = 100)
 cmds.button( label='rotate 75', width = 100)
 cmds.button( label='rotate 90', width = 100)
 
+# rotation buttons negative
+cmds.button( label='rotate -15', width = 100)
+cmds.button( label='rotate -25', width = 100)
+cmds.button( label='rotate -45', width = 100)
+cmds.button( label='rotate -75', width = 100)
+cmds.button( label='rotate -90', width = 100)
+
 cmds.separator(height=20)
-cmds.separator(height=20)
+
 
 # scale  up buttons
 cmds.button( label='+10% scale', width = 100)
@@ -567,7 +568,7 @@ cmds.button( label='+50% scale', width = 100)
 cmds.button( label='+75% scale', width = 100)
 
 cmds.separator(height=20)
-cmds.separator(height=20)
+
 
 # scale down buttons
 cmds.button( label='-10% scale', width = 100)
