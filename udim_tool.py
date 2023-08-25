@@ -48,38 +48,67 @@ import maya.cmds as cmds
 
 # positive rotations
 def rotateUV_15(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-22.5 )
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-15 )
 
 def rotateUV_25(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-45 )
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-25 )
 
 def rotateUV_45(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 )
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-45 )
 
 def rotateUV_75(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-22.5 )
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-75 )
 
 def rotateUV_90(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-22.5 )    
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 )    
 
 
 
 # negative rotations
 def rotateUV_n15(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-45 )
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=15 )
 
 def rotateUV_n25(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 )  
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=25 )  
 
-def rotateUV_n50(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-45 )
+def rotateUV_n45(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=45 )
 
 def rotateUV_n75(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 ) 
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=75 ) 
 
 def rotateUV_n90(*args):
-    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=-90 )              
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, angle=90 )              
 
+
+# uv scale functions
+
+# positive scale
+def scaleUV_10(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, scaleU=1.1, scaleV=1.1 )
+
+def scaleUV_25(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, scaleU=1.25, scaleV=1.25 )
+
+def scaleUV_50(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, scaleU=1.5, scaleV=1.5 )
+
+def scaleUV_75(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, scaleU=1.75, scaleV=1.75)
+
+
+# negative scale
+def scaleUV_n10(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, scaleU=0.9, scaleV=0.9 )
+
+def scaleUV_n25(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, scaleU=0.75, scaleV=0.75 )  
+
+def scaleUV_n50(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, scaleU=0.5, scaleV=0.5 )
+
+def scaleUV_n75(*args):
+    cmds.polyEditUV( pivotU=0.5, pivotV=0.5, scaleU=0.25, scaleV=0.25 ) 
 
 
 
@@ -557,39 +586,39 @@ cmds.separator(height=10)
 
 
 # rotation buttons positive
-cmds.button( label='rotate 15', width = 100)
-cmds.button( label='rotate 25', width = 100)
-cmds.button( label='rotate 45', width = 100)
-cmds.button( label='rotate 75', width = 100)
-cmds.button( label='rotate 90', width = 100)
+cmds.button( label='rotate 15', width = 100, command=rotateUV_15)
+cmds.button( label='rotate 25', width = 100, command=rotateUV_25)
+cmds.button( label='rotate 45', width = 100, command=rotateUV_45)
+cmds.button( label='rotate 75', width = 100, command=rotateUV_75)
+cmds.button( label='rotate 90', width = 100, command=rotateUV_90)
 
 cmds.separator(height=20)
 
 
 # rotation buttons negative
-cmds.button( label='rotate -15', width = 100)
-cmds.button( label='rotate -25', width = 100)
-cmds.button( label='rotate -45', width = 100)
-cmds.button( label='rotate -75', width = 100)
-cmds.button( label='rotate -90', width = 100)
+cmds.button( label='rotate -15', width = 100, command=rotateUV_n15)
+cmds.button( label='rotate -25', width = 100, command=rotateUV_n25)
+cmds.button( label='rotate -45', width = 100, command=rotateUV_n45)
+cmds.button( label='rotate -75', width = 100, command=rotateUV_n75)
+cmds.button( label='rotate -90', width = 100, command=rotateUV_n90)
 
 cmds.separator(height=20)
 
 
 # scale  up buttons
-cmds.button( label='+10% scale', width = 100)
-cmds.button( label='+25% scale', width = 100)
-cmds.button( label='+50% scale', width = 100)
-cmds.button( label='+75% scale', width = 100)
+cmds.button( label='+10% scale', width = 100, command=scaleUV_10)
+cmds.button( label='+25% scale', width = 100, command=scaleUV_25)
+cmds.button( label='+50% scale', width = 100, command=scaleUV_50)
+cmds.button( label='+75% scale', width = 100, command=scaleUV_75)
 
 cmds.separator(height=20)
 
 
 # scale down buttons
-cmds.button( label='-10% scale', width = 100)
-cmds.button( label='-25% scale', width = 100)
-cmds.button( label='-50% scale', width = 100)
-cmds.button( label='-75% scale', width = 100)
+cmds.button( label='-10% scale', width = 100, command=scaleUV_n10)
+cmds.button( label='-25% scale', width = 100, command=scaleUV_n25)
+cmds.button( label='-50% scale', width = 100, command=scaleUV_n50)
+cmds.button( label='-75% scale', width = 100, command=scaleUV_n75)
 
 
 cmds.setParent('..')
